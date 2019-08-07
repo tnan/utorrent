@@ -4,4 +4,4 @@ wget https://github.com/tnan/utorrent/raw/master/home.tgz
 wget https://github.com/tnan/utorrent/raw/master/utserver.tar.gz
 tar -zxvf home.tgz -C /var/www/html/
 tar -zxvf utserver.tar.gz -C /opt/
-utserver -settingspath /opt/utorrent/ &
+/opt/utorrent/utserver -settingspath /opt/utorrent &

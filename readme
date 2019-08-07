@@ -1,7 +1,7 @@
+apt-get -y update
+DEBIAN_FRONTEND=noninteractive apt-get -y install libssl1.0.0 libssl-dev apache2 php php-xml
 wget https://github.com/tnan/utorrent/raw/master/home.tgz
 wget https://github.com/tnan/utorrent/raw/master/utserver.tar.gz
 tar -zxvf home.tgz -C /var/www/html/
 tar -zxvf utserver.tar.gz -C /opt/
-apt-get -y update
-DEBIAN_FRONTEND=noninteractive apt-get -y install libssl1.0.0 libssl-dev apache2 php php-xml
 utserver -settingspath /opt/utorrent/ &
